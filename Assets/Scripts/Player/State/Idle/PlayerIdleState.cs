@@ -2,8 +2,17 @@ using UnityEngine;
 
 public class PlayerIdleState : PlayerStateBase
 {
-   public override void Enter()
+    /// <summary>
+    /// ´ý»ú×´Ì¬
+    /// </summary>
+    public override void Enter()
     {
+        base.Enter();
 
+        switch (playerModel.currentState)
+        {
+            //case PlayerState.Idle:
+            //    playerControlle
+        }
     }
 }
