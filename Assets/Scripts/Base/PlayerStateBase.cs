@@ -54,6 +54,44 @@ public class PlayerStateBase : StateBase
 
     public override void Update()
     {
+        //施加重力影响
+        playerModel.characterController.Move(new Vector3(0, playerModel.gravity * Time.deltaTime, 0));
+        //状态进入时间计时
+        statePlayTime += Time.deltaTime;
 
+        #region 角色切换
+        if(playerController.inputSystem.Player.SwitchDown.triggered && 
+            playerModel.currentState != PlayerState.BigSkillStart &&
+            playerModel.currentState != PlayerState.BigSkill)
+        {
+            //切换到下一个模型
+            playerController.SwitchNextModel();
+        }
+        if(playerController.inputSystem.Player.SwitchUp.triggered &&
+            playerModel.currentState != PlayerState.BigSkillStart &&
+            playerModel.currentState != PlayerState.BigSkill)
+        {
+            //切换到上一个模型
+            playerController.SwitchLastModel();
+        }
+        #endregion
+    }
+
+    /// <summary>
+    /// 判断当前动画是否播放结束
+    /// </summary>
+    /// <returns></returns>
+    public bool IsAnimationEnd()
+    {
+        // 刷新动画状态
+        stateInfo = playerModel.animator.GetCurrentAnimatorStateInfo(0);
+        return stateInfo.normalizedTime >= 1.0f && !playerModel.animator.IsInTransition(0);
+    }
+
+    public float NormalizedTime()
+    {
+        // 刷新动画状态
+        stateInfo = playerModel.animator.GetCurrentAnimatorStateInfo(0);
+        return stateInfo.normalizedTime;
     }
 }
