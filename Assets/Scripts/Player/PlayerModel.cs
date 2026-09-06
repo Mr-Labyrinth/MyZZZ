@@ -19,7 +19,7 @@ public class PlayerModel : MonoBehaviour
     //重力
     public float gravity = -9.81f;
     //技能配置文件
-    public SkiilConfig skillConfig;
+    public SkillConfig skillConfig;
     //大招镜头
     public GameObject bigSkillShot;
 

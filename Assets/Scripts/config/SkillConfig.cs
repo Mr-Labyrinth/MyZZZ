@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName ="Config/Skill")]
-public class SkiilConfig : ScriptableObject
+public class SkillConfig : ScriptableObject
 {
     // ÆÕ¹¥¶ÎÊý
     [HideInInspector]public int currentNormalAttackIndex = 1;
