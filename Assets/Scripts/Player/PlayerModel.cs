@@ -20,6 +20,8 @@ public class PlayerModel : MonoBehaviour
     public float gravity = -9.81f;
     //技能配置文件
     public SkillConfig skillConfig;
+    // 大招开始镜头
+    public GameObject bigSkillStartShot;
     //大招镜头
     public GameObject bigSkillShot;
 

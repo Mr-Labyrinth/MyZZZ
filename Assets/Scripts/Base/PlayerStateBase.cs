@@ -6,7 +6,7 @@ public enum PlayerState
     Walk, Run, RunEnd, TurnBack,
     Evade_Front, Evade_Back, Evade_Front_End, Evade_Back_End,
     NormalAttack, NormalAttack_End,
-    BigSkillStart, BigSkill, BigSkill_End,
+    BigSkillStart, BigSkill, BigSkillEnd,
     SwitchInNormal
 }
 
