@@ -74,9 +74,50 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
         playerModel.currentState = playerState;
         switch (playerState)
         {
-            //    case PlayerState.Idle:
-            //    case PlayerState.Idle_AFK:
-            //        stateMachine.EnterState<>
+            case PlayerState.Idle:
+            case PlayerState.Idle_AFK:
+                stateMachine.EnterState<PlayerIdleState>(true);
+                break;
+            case PlayerState.Walk:
+                stateMachine.EnterState<PlayerRunState>(true);
+                break;
+            case PlayerState.RunEnd:
+                stateMachine.EnterState<PlayerRunEndState>(true);
+                break;
+            case PlayerState.TurnBack:
+                stateMachine.EnterState<PlayerTurnBackState>(true);
+                break;
+            case PlayerState.Evade_Front:
+            case PlayerState.Evade_Back:
+                if(evadeTimer != 1)
+                {
+                    return;
+                }
+                stateMachine.EnterState<PlayerEvadeState>();
+                evadeTimer = 0f;
+                break;
+            case PlayerState.Evade_Front_End:
+            case PlayerState.Evade_Back_End:
+                stateMachine.EnterState<PlayerEvadeEndState>();
+                break;
+            case PlayerState.NormalAttack:
+                stateMachine.EnterState<PlayerNormalAttackState>(true);
+                break;
+            case PlayerState.NormalAttack_End:
+                stateMachine.EnterState<PlayerNormalAttackEndState>();
+                break;
+            case PlayerState.BigSkillStart:
+                stateMachine.EnterState<PlayerBigSkillStartState>();
+                break;
+            case PlayerState.BigSkill:
+                stateMachine.EnterState<PlayerBigSkillState>();
+                break;
+            case PlayerState.BigSkillEnd:
+                stateMachine.EnterState<PlayerBigSkillEndState>();
+                break;
+            case PlayerState.SwitchInNormal:
+                stateMachine.EnterState<PlayerSwitchInNormalState>();
+                break;
         }
     }
 
