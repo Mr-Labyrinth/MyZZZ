@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Corin Skill Config
   m_EditorClassIdentifier: 
   currentNormalAttackIndex: 1
-  normalAttackDamageMulitple: []
+  normalAttackDamageMulitple:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0

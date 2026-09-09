@@ -6,6 +6,7 @@ public class PlayerEvadeEndState : PlayerStateBase
     {
         base.Enter();
 
+
         #region ≈–∂¡«∞∫Û…¡±‹
         switch (playerModel.currentState)
         {

@@ -65,7 +65,7 @@ public class PlayerModel : MonoBehaviour
     /// </summary>
     public void Exit()
     {
-        animator.CrossFade("SwitchOut", 0.1f);
+        animator.CrossFade("SwitchOut_Normal", 0.1f);
         MonoManager.INSTANCE.AddUpdateAction(OnExit);
     }
 

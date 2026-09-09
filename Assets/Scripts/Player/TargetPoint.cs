@@ -12,7 +12,7 @@ public class TargetPoint : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 playerPos = PlayerController.INSTANCE.transform.position;
+        Vector3 playerPos = PlayerController.INSTANCE.playerModel.transform.position;
         transform.position =
             new Vector3(playerPos.x, playerPos.y + height, playerPos.z);
     }

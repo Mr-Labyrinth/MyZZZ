@@ -81,6 +81,9 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
             case PlayerState.Walk:
                 stateMachine.EnterState<PlayerRunState>(true);
                 break;
+            case PlayerState.Run:
+                stateMachine.EnterState<PlayerRunState>(true);
+                break;
             case PlayerState.RunEnd:
                 stateMachine.EnterState<PlayerRunEndState>(true);
                 break;
