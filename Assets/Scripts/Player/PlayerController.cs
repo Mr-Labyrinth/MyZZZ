@@ -215,6 +215,11 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
                 evadeTimer = 1f;
             }
         }
+
+        if (inputSystem.Player.Esc.triggered)
+        {
+            Application.Quit();
+        }
     }
     private void LockMouse()
     {
