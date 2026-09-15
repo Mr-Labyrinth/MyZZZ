@@ -1,6 +1,8 @@
 using NUnit.Framework;
+using System;
 using UnityEngine;
 
+[Serializable]
 public struct UIConfigData
 {
     public string uiName;
@@ -8,6 +10,7 @@ public struct UIConfigData
     public GameObject ui;
 }
 
+[CreateAssetMenu(menuName = "Config/UI Config")]
 public class UIConfig : ScriptableObject
 {
     public UIConfigData[] uIConfigDatas;
