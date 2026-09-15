@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UIManager : SingleMomoBase<UIManager>
 {
     [SerializeField]
     private UIConfig config;
 
-    public void Awake()
+    protected override void Awake()
     {
         
     }

@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System;
 using UnityEngine;
 
@@ -7,11 +6,24 @@ public struct UIConfigData
 {
     public string uiName;
     public string uiPath;
-    public GameObject ui;
 }
 
-[CreateAssetMenu(menuName = "Config/UI Config")]
+[CreateAssetMenu(fileName ="UIConfig", menuName = "Config/UI Config")]
 public class UIConfig : ScriptableObject
 {
-    public UIConfigData[] uIConfigDatas;
+    public UIConfigData[] uiConfigDatas;
+
+    public bool TryGet(string uiName, out UIConfigData data)
+    {
+        foreach (var item in uiConfigDatas)
+        {
+            if (item.uiName == uiName)
+            {
+                data = item;
+                return true;
+            }
+        }
+        data = default;
+        return false;
+    }
 }
