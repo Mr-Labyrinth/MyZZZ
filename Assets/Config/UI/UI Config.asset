@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47d0d1879ae2dd4392a8e550265582a, type: 3}
   m_Name: UI Config
   m_EditorClassIdentifier: 
-  uIConfigDatas:
-  - uiName: MainUI
+  uiConfigDatas:
+  - uiName: main
     uiPath: 
-    ui: {fileID: 0}
   - uiName: 
     uiPath: 
-    ui: {fileID: 0}

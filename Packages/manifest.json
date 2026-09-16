@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.tuyoogame.yooasset": "https://github.com/tuyoogame/YooAsset.git?path=/Assets/YooAsset",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.animation.rigging": "1.3.1",
