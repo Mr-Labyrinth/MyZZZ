@@ -11,7 +11,8 @@ public class CameraManager : SingleMomoBase<CameraManager>
     // 自由相机
     public GameObject freeLookCamera;
     // 自由相机的组件
-    public CinemachineCamera freeLook;
+    [SerializeField]
+    private CinemachineInputAxisController controller;
 
     public void ResetFreeLookCamera()
     {
