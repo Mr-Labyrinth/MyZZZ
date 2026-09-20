@@ -3,17 +3,35 @@ using UnityEngine.UI;
 
 public class SetPanel : MonoBehaviour
 {
-    public Slider slider;
-    public Text valueView;
+    public Slider mainSlider;
+    public Slider musicSlider;
+    public Slider soundSlider;
+    public Text mainValueView;
+    public Text musicValueView;
+    public Text soundValueView;
 
     private void Start()
     {
-        slider.onValueChanged.AddListener(OnValueChanged);
+        mainSlider.onValueChanged.AddListener(OnMainValueChanged);
+        musicSlider.onValueChanged.AddListener(OnMusicValueChanged);
+        soundSlider.onValueChanged.AddListener(OnSoundValueChanged);
     }
 
-    private void OnValueChanged(float value)
+    private void OnMainValueChanged(float value)
     {
         int displayValue = Mathf.RoundToInt(value * 100);
-        valueView.text = displayValue.ToString() + "%";
+        mainValueView.text = displayValue.ToString() + "%";
+    }
+
+    private void OnMusicValueChanged(float value)
+    {
+        int displayValue = Mathf.RoundToInt(value * 100);
+        musicValueView.text = displayValue.ToString() + "%";
+    }
+
+    private void OnSoundValueChanged(float value)
+    {
+        int displayValue = Mathf.RoundToInt(value * 100);
+        soundValueView.text = displayValue.ToString() + "%";
     }
 }
