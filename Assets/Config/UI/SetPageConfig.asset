@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiConfigDatas:
   - uiName: main
-    uiPath: Assets/Perfabs/UI/Input.prefab
+    uiPath: Perfabs/UI/Input
   - uiName: input
-    uiPath: Assets/Perfabs/UI/Set.prefab
+    uiPath: Perfabs/UI/Set
   - uiName: games
-    uiPath: Assets/Perfabs/UI/games.prefab
+    uiPath: Perfabs/UI/games

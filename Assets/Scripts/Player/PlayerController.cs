@@ -1,8 +1,5 @@
-using NUnit.Framework;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOwner
 {
@@ -214,11 +211,6 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
             {
                 evadeTimer = 1f;
             }
-        }
-
-        if (inputSystem.Player.Esc.triggered)
-        {
-            Application.Quit();
         }
     }
     private void LockMouse()
