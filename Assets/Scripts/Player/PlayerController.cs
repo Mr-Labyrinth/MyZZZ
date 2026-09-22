@@ -34,7 +34,7 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
         base.Awake();
 
         stateMachine = new StateMachine(this);
-        inputSystem = new InputSystem();
+        inputSystem = InputManager.Instance.inputActions;
 
         controllableModels = new List<PlayerModel>();
 

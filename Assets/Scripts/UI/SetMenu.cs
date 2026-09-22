@@ -8,6 +8,6 @@ public class SetMenu : MonoBehaviour
     
     public void Start()
     {
-        inputActions.UI.Esc
+        
     }
 }
