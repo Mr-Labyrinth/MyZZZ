@@ -12,6 +12,12 @@ public class SetMenu : MonoBehaviour
     {
         inputActions = InputManager.Instance.inputActions;
     }
+
+    private void Start()
+    {
+        setMenu.SetActive(false);
+    }
+
     private void OnEnable()
     {
 
@@ -50,6 +56,7 @@ public class SetMenu : MonoBehaviour
 
         // »Ö¸´½ÇÉ«¿ØÖÆ
         inputActions.Player.Enable();
+        InputManager.Instance.LockMouse();
     }
 
     

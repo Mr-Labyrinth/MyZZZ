@@ -1,20 +1,32 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-100)]
 public class InputManager : MonoBehaviour
 {
     public static InputManager Instance { get; private set; }
-    
+
     public InputSystem inputActions { get; private set; }
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    private static void AutoInit()
+    {
+        if (FindAnyObjectByType<InputManager>() == null)
+        {
+            var go = new GameObject("[InputManager]");
+            go.AddComponent<InputManager>();
+            DontDestroyOnLoad(go);
+        }
+    }
 
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
-
+        DontDestroyOnLoad(gameObject);
         inputActions = new InputSystem();
     }
 
@@ -26,14 +38,13 @@ public class InputManager : MonoBehaviour
 
     public void LockMouse()
     {
-        //锁定光标
         Cursor.lockState = CursorLockMode.Locked;
-        //隐藏光标
         Cursor.visible = false;
     }
 
     private void OnDestroy()
     {
         inputActions?.Dispose();
+        if (Instance == this) Instance = null;
     }
 }
