@@ -57,7 +57,7 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
     private void Start()
     {
         //锁定光标
-        LockMouse();
+        InputManager.Instance.LockMouse();
         //切换到待机状态
         SwitchState(PlayerState.Idle);
     }
@@ -212,13 +212,6 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
                 evadeTimer = 1f;
             }
         }
-    }
-    private void LockMouse()
-    {
-        //锁定光标
-        Cursor.lockState = CursorLockMode.Locked;
-        //隐藏光标
-        Cursor.visible = false;
     }
 
     private void OnEnable()
