@@ -1,13 +1,13 @@
 using UnityEngine;
 
-[DefaultExecutionOrder(-100)]
+//[DefaultExecutionOrder(-100)]
 public class InputManager : MonoBehaviour
 {
     public static InputManager Instance { get; private set; }
 
     public InputSystem inputActions { get; private set; }
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void AutoInit()
     {
         if (FindAnyObjectByType<InputManager>() == null)

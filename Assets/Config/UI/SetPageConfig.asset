@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SetPageConfig
   m_EditorClassIdentifier: 
   uiConfigDatas:
-  - uiName: main
-    uiPath: Perfabs/UI/Input
+  - uiName: Voice
+    uiPath: Perfabs/UI/Voice
   - uiName: input
-    uiPath: Perfabs/UI/Set
+    uiPath: Perfabs/UI/Input
   - uiName: games
     uiPath: Perfabs/UI/games

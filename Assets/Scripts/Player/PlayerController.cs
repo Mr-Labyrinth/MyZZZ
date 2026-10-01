@@ -159,7 +159,7 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
         //退出当前模型
         playerModel.Exit();
         #region 控制上一个模型
-        currentModelIndex++;
+        currentModelIndex--;
         if(currentModelIndex < 0)
         {
             currentModelIndex = controllableModels.Count - 1;

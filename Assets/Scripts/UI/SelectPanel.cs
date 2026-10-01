@@ -16,7 +16,8 @@ public class SelectPanel : MonoBehaviour
 
         pages = new GameObject[uiConfig.uiConfigDatas.Length];
 
-        for(int i = 0; i < uiConfig.uiConfigDatas.Length; i++)
+        // 根据UIConfig中的配置加载页面预制体并实例化
+        for (int i = 0; i < uiConfig.uiConfigDatas.Length; i++)
         {
             GameObject page;
             string name = uiConfig.uiConfigDatas[i].uiName;
@@ -38,7 +39,8 @@ public class SelectPanel : MonoBehaviour
         Toggle[] toggles = toggleGroup.GetComponentsInChildren<Toggle>();
         for(int i = 0; i < toggles.Length; i++)
         {
-            int index = i;
+            int index = i;// 防止闭包问题
+            // 为每个Toggle添加监听器，当Toggle被选中时切换到对应的页面
             toggles[index].onValueChanged.AddListener((isOn) =>
             {
                 if (isOn)
@@ -47,13 +49,15 @@ public class SelectPanel : MonoBehaviour
                 }
             });
         }
-        if(toggles.Length > 0)
+        // 默认选中第一个Toggle并显示对应的页面
+        if (toggles.Length > 0)
         {
             toggles[0].isOn = true;
             switchPage(0);
         }
     }
 
+    // 切换页面的方法
     private void switchPage(int index)
     {
         for(int i = 0; i < pages.Length; i++)

@@ -13,6 +13,7 @@ public class CameraManager : SingleMomoBase<CameraManager>
     // 自由相机的组件
     [SerializeField]
     private CinemachineInputAxisController controller;
+    public CinemachineInputAxisController Controller { get { return controller; } private set { } }
 
     public void ResetFreeLookCamera()
     {
