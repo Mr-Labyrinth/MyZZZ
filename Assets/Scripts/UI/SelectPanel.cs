@@ -9,16 +9,17 @@ public class SelectPanel : MonoBehaviour
     private GameObject[] pages;
     [SerializeField]
     private Transform pageRoot;
+    [SerializeField]
     private Button exitButton;
 
     private void Awake()
     {
-        toggleGroup = GetComponent<ToggleGroup>();
+        toggleGroup = GetComponentInChildren<ToggleGroup>();
 
         pages = new GameObject[uiConfig.uiConfigDatas.Length];
 
         exitButton = GetComponentInChildren<Button>();
-        exitButton.onClick.AddListener(OnExitButtonClicked);
+        exitButton?.onClick.AddListener(OnExitButtonClicked);
 
         // 根据UIConfig中的配置加载页面预制体并实例化
         for (int i = 0; i < uiConfig.uiConfigDatas.Length; i++)
@@ -73,5 +74,6 @@ public class SelectPanel : MonoBehaviour
     private void OnExitButtonClicked()
     {
         Application.Quit();
+        Debug.Log("退出游戏");
     }
 }

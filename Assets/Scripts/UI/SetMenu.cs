@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class SetMenu : MonoBehaviour
 {
@@ -7,10 +8,13 @@ public class SetMenu : MonoBehaviour
     private GameObject setMenu;
     private InputSystem inputActions;
     private bool isPaused = false;
+    [SerializeField]
+    private Button closeButton;
 
     private void Awake()
     {
         inputActions = InputManager.Instance.inputActions;
+        closeButton.onClick.AddListener(closeMenu);
     }
 
     private void Start()

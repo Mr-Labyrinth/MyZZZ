@@ -4922,7 +4922,7 @@ GameObject:
   - component: {fileID: 1446610938}
   - component: {fileID: 1446610937}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5206,7 +5206,6 @@ GameObject:
   - component: {fileID: 1498287519}
   - component: {fileID: 1498287520}
   - component: {fileID: 1498287521}
-  - component: {fileID: 1498287522}
   m_Layer: 5
   m_Name: list
   m_TagString: Untagged
@@ -5275,20 +5274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowSwitchOff: 0
---- !u!114 &1498287522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498287518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5958bf2af71f7e44ad2b985e0b6916a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiConfig: {fileID: 11400000, guid: 82a0b4eca30aa3e438555147d8581e6e, type: 2}
-  pageRoot: {fileID: 1848388512}
 --- !u!1 &1517711811
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,6 +5986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setMenu: {fileID: 1296807245}
+  closeButton: {fileID: 1844772817}
 --- !u!1 &1594624172
 GameObject:
   m_ObjectHideFlags: 0
@@ -7479,7 +7465,7 @@ GameObject:
   - component: {fileID: 1844772818}
   - component: {fileID: 1844772817}
   m_Layer: 5
-  m_Name: ExitButton
+  m_Name: CloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7902,6 +7888,7 @@ GameObject:
   - component: {fileID: 2089772979}
   - component: {fileID: 2089772981}
   - component: {fileID: 2089772980}
+  - component: {fileID: 2089772982}
   m_Layer: 5
   m_Name: select
   m_TagString: Untagged
@@ -7968,6 +7955,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089772978}
   m_CullTransparentMesh: 1
+--- !u!114 &2089772982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089772978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5958bf2af71f7e44ad2b985e0b6916a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiConfig: {fileID: 11400000, guid: 82a0b4eca30aa3e438555147d8581e6e, type: 2}
+  pageRoot: {fileID: 1848388512}
+  exitButton: {fileID: 0}
 --- !u!43 &2098070397
 Mesh:
   m_ObjectHideFlags: 0
