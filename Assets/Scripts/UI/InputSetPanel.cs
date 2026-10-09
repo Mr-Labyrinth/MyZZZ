@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.DebugUI;
 
-public class InputPanel : MonoBehaviour
+public class InputSetPanel : MonoBehaviour
 {
     [SerializeField]
     private Slider verticalSensitivity;
