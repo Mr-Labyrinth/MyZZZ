@@ -1,0 +1,30 @@
+using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
+using UnityEngine;
+
+public class AssetManager : SingleMomoBase<AssetManager>
+{
+    private AssetLoader assetLoader;
+
+    private Dictionary<string, UnityEngine.Object> loadedAssets = new();
+
+    [SerializeField]
+    private AseetConfig initAssetConfig;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        assetLoader = AssetLoader.Instance;
+    }
+
+    private void InitLoadAsset()
+    {
+        foreach (var assetConfig in initAssetConfig.AssetConfigs)
+        {
+            assetLoader.LoadAsync<UnityEngine.Object>(assetConfig.assetPath, (asset) =>
+            {
+                loadedAssets[assetConfig.assetName] = asset;
+            });
+        }
+    }
+}
