@@ -38,6 +38,8 @@ public class PlayerController : SingleMomoBase<PlayerController>,IStateMachineOw
 
         controllableModels = new List<PlayerModel>();
 
+        
+
         #region 生成角色模型
         for(int i=0; i < playerConfig.models.Length; i++)
         {

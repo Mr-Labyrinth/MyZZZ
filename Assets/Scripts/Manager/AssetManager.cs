@@ -21,10 +21,8 @@ public class AssetManager : SingleMomoBase<AssetManager>
     {
         foreach (var assetConfig in initAssetConfig.AssetConfigs)
         {
-            assetLoader.LoadAsync<UnityEngine.Object>(assetConfig.assetPath, (asset) =>
-            {
-                loadedAssets[assetConfig.assetName] = asset;
-            });
+            assetLoader.Load<UnityEngine.Object>(assetConfig.assetPath, out var asset);
+            loadedAssets[assetConfig.assetName] = asset;
         }
     }
 }
