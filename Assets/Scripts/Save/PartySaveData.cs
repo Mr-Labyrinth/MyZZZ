@@ -2,6 +2,6 @@ using UnityEngine;
 
 public class PartySaveData
 {
-    public string[] memberIds = new string[3];
+    public CharacterSaveData[] memberIds = new CharacterSaveData[3];
     public int activeIndex = 0;
 }
