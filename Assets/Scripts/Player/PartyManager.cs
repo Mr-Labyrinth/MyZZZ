@@ -10,6 +10,7 @@ public class PartyManager
     public void Initialize()
     {
         partySaveData = SaveSystem.LoadParty();
+
     }
 
     public void switchToNext()
