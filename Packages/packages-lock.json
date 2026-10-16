@@ -17,7 +17,7 @@
         "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
       },
-      "hash": "b989d1505d0a9506e89121a5d91f5fef6608edea"
+      "hash": "85a87fca0589e85f36531e5ddbecbab5d10636be"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -195,8 +195,8 @@
       }
     },
     "com.unity.scriptablebuildpipeline": {
-      "version": "2.1.4",
-      "depth": 1,
+      "version": "1.21.25",
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

@@ -1,0 +1,1154 @@
+{
+    "Summary": {
+        "YooVersion": "3.0.6",
+        "UnityVersion": "6000.0.40f1",
+        "BuildDate": "2026/10/16 11:00:03",
+        "BuildSeconds": 51,
+        "BuildTarget": 19,
+        "BuildPipeline": "ScriptableBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "DefaultPackage",
+        "BuildPackageVersion": "v0.0.1",
+        "BuildPackageNote": "2026/10/16 10:59:12",
+        "UniqueBundleName": false,
+        "EnableAddressable": true,
+        "SupportExtensionless": true,
+        "LocationToLower": false,
+        "IncludeAssetGuid": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": false,
+        "UseAssetDependencyDB": false,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionServicesClassName": "YooAsset.Editor.EncryptionNone",
+        "ManifestProcessServicesClassName": "YooAsset.Editor.ManifestEncryptorNone",
+        "ManifestRestoreServicesClassName": "YooAsset.Editor.ManifestDecryptorNone",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": false,
+        "ReplaceAssetPathWithAddress": false,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "unityshaders.bundle",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 103,
+        "MainAssetTotalCount": 3,
+        "AllBundleTotalCount": 12,
+        "AllBundleTotalSize": 180674264,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "Anbi",
+            "AssetPath": "Assets/Resources/Perfabs/HeroModel/Anbi.prefab",
+            "AssetGuid": "53625b26a1d3bd745970568f7a26719b",
+            "AssetTags": [],
+            "MainBundleName": "assets_resources_perfabs_heromodel.bundle",
+            "MainBundleSize": 62333,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi.controller",
+                    "AssetGUID": "7a6c170d77e4c414a8f8c2f2efee78e5"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi.FBX",
+                    "AssetGUID": "23cdbd03f2eaf3f4cb518099d973a681"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_1.FBX",
+                    "AssetGUID": "629136f7a6ed3a745a94367cd1fb8c55"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_1_End.FBX",
+                    "AssetGUID": "5929e7bdcd825c64f9c275142c13bca4"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_2.FBX",
+                    "AssetGUID": "e1e55c12dc4b0b544be7dc0d6658d44c"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_2_End.FBX",
+                    "AssetGUID": "2a67e1a9b76d34649adc85c17832dcf2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_3.FBX",
+                    "AssetGUID": "66a3c3ba8dac4104492bfc6b94a72069"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_3_End.FBX",
+                    "AssetGUID": "af06614030c1c7549b5c068562a22b9f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_4.FBX",
+                    "AssetGUID": "dca899021812b8647bcdbd37b60255f5"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_4_End.FBX",
+                    "AssetGUID": "59f18559fd413744eac2de598683513e"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@BigSkill.FBX",
+                    "AssetGUID": "79ddcc155c1b27446b57290b86f300a5"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@BigSkill_End.FBX",
+                    "AssetGUID": "b621fdeb228716248821fe3ce76c4ab2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@BigSkill_Start.FBX",
+                    "AssetGUID": "6ce9753b8ca3ddd4c8529b95e157881a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Evade_Back.FBX",
+                    "AssetGUID": "37b29f4eb6590f24eaa3075bda1defea"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Evade_Front.FBX",
+                    "AssetGUID": "cfa19dc2605312d4993be165683af51a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Idle.FBX",
+                    "AssetGUID": "60f968e677323be408fa57c23ba2d0aa"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Idle_AFK.FBX",
+                    "AssetGUID": "ad4a2bef2c64a3b4db7cdc4898465841"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Run.FBX",
+                    "AssetGUID": "9c7c1b9434aba2845a08684f4ed220ff"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Run_End_L.FBX",
+                    "AssetGUID": "ae23456857b4f6d4cb410d6f322d5470"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Run_End_R.FBX",
+                    "AssetGUID": "b9b2f805b39e1434fa7d580067c36a8d"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@SwitchIn_Normal.FBX",
+                    "AssetGUID": "bcd5e3535cbde024199c6342807f542f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@SwitchOut_Normal.FBX",
+                    "AssetGUID": "8dfc1add812740f4783e603795729dae"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@TurnBack.FBX",
+                    "AssetGUID": "55bf3e8056b8a864fab81dd95012c522"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Walk.FBX",
+                    "AssetGUID": "4b5d5036efc6b8848b2c416d536df5bb"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Body_D.tga.mat",
+                    "AssetGUID": "0aab71da9505119438ba80282108945f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Face_D.tga.mat",
+                    "AssetGUID": "5602330d0a2c99245a7574781e33d557"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Hair_D.tga.mat",
+                    "AssetGUID": "c94c20d4741694c4b935e89ad9529f64"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Weapon_D.tga.mat",
+                    "AssetGUID": "219b98eedaf14f34e8fde94155fc19ee"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Body_D.tga.png",
+                    "AssetGUID": "d5f3acdd7fc5df7429d12caac48f9b3f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Face_D.tga.png",
+                    "AssetGUID": "4012ae10fabefaa47a4d2249c915efe8"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Hair_D.tga.png",
+                    "AssetGUID": "f7ea701bf88cb7441a12ac1f37332368"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Weapon_D.tga.png",
+                    "AssetGUID": "aa4c627940867474197756a12c8b9139"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Shader/Character.shader",
+                    "AssetGUID": "1c92ee9a0ddbcec429b983827abe637b"
+                },
+                {
+                    "AssetPath": "Assets/Config/Skill/Anbi Skill Config.asset",
+                    "AssetGUID": "6263c4c6b9c876b4f920bc68f7042359"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_arts_anbi.bundle",
+                "share_assets_arts_anbi_materials.bundle",
+                "share_assets_arts_anbi_png.bundle",
+                "share_assets_config_skill.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Corin",
+            "AssetPath": "Assets/Resources/Perfabs/HeroModel/Corin.prefab",
+            "AssetGuid": "82d35c34041bc30409a00736fe62232c",
+            "AssetTags": [],
+            "MainBundleName": "assets_resources_perfabs_heromodel.bundle",
+            "MainBundleSize": 62333,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin.controller",
+                    "AssetGUID": "4823475d9d7921043977039d1c2f0d56"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin.FBX",
+                    "AssetGUID": "093333bec3e85ee44bf149b914583659"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_1.FBX",
+                    "AssetGUID": "65209e8c4d1801340ac3b4ceafdd692b"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_1_End.FBX",
+                    "AssetGUID": "6e46ebf8de9e3d9489d3a6803f53e9be"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_2.FBX",
+                    "AssetGUID": "dd533906319d5d941bf2b31b59ce3ae2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_2_End.FBX",
+                    "AssetGUID": "32f8a25b2bb9121478a9421dc7a43f44"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_3.FBX",
+                    "AssetGUID": "942a5e7d46d51b9468a2e70314778a8a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_3_End.FBX",
+                    "AssetGUID": "d846ebe4a0f39b44593191ef1c4f8cf3"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_4.FBX",
+                    "AssetGUID": "4743d0640f7aa77429bf28e34977a99f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_4_End.FBX",
+                    "AssetGUID": "5d98f1b449cd8b44e8762defdf42de72"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_5.FBX",
+                    "AssetGUID": "ff7c22733354b664b8af850af06c181f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_5_End.FBX",
+                    "AssetGUID": "f89a16caf6fc82747861da9d73e789da"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@BigSkill.FBX",
+                    "AssetGUID": "ad3f7b0a0668ead4199d4e298a10886d"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@BigSkill_End.FBX",
+                    "AssetGUID": "053a3313deb69a44cbe4dc4db5a8bb2b"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@BigSkill_Start.FBX",
+                    "AssetGUID": "1cccbad9192fe924bbb7beca8458f038"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Evade_Back.FBX",
+                    "AssetGUID": "605b3d18eee14104e865531390a23e23"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Evade_Front.FBX",
+                    "AssetGUID": "17606826c5911b8428db524f94d4ad14"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Idle.FBX",
+                    "AssetGUID": "f719a10de11acfa47a0d797b22016d9a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Idle_AFK.FBX",
+                    "AssetGUID": "a2fb0a87054b33a46915b50a425f2ee9"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Run.FBX",
+                    "AssetGUID": "810726eb55c11db498e1a9c362962546"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Run_End.FBX",
+                    "AssetGUID": "932ddb9b0733987429189363ef1c5daa"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@SwitchIn_Normal.FBX",
+                    "AssetGUID": "e7559470e3aa4d440bbf52e014012413"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@SwitchOut_Normal.FBX",
+                    "AssetGUID": "32a6d0615b4c9544d8282f4d9fb1328c"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@TurnBack.FBX",
+                    "AssetGUID": "fab0f39f371f2e34d9812c6bacb80435"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Walk.FBX",
+                    "AssetGUID": "46c131a312e4d104ea002ee6a5aea6b3"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Body_D.tga.mat",
+                    "AssetGUID": "afb5df9abb209704089b5feb7ee8ddec"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Face_D.tga.mat",
+                    "AssetGUID": "42eaaa0d4922aaf4b9970518b9a59749"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Hair_D.tga.mat",
+                    "AssetGUID": "e0639b22a83d4064ab72f9cd7cca340a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Weapon_D.tga.mat",
+                    "AssetGUID": "73c1bd1014384ae4fa3fbfefde1823b0"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Body_D.tga.png",
+                    "AssetGUID": "2a649c6455c98b645b860b2fe0812264"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Face_D.tga.png",
+                    "AssetGUID": "76200fc970e34234bafc48b29c1bf3f3"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Hair_D.tga.png",
+                    "AssetGUID": "c8609015fa1c5a347a0b51170bc28558"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Weapon_D.tga.png",
+                    "AssetGUID": "0af6a8e2cd77f1445ba5f702f7f180d6"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Shader/Character.shader",
+                    "AssetGUID": "1c92ee9a0ddbcec429b983827abe637b"
+                },
+                {
+                    "AssetPath": "Assets/Config/Skill/Corin Skill Config.asset",
+                    "AssetGUID": "f734918d21417b64d97e1d1e33cd6f01"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_arts_corin.bundle",
+                "share_assets_arts_corin_materials.bundle",
+                "share_assets_arts_corin_png.bundle",
+                "share_assets_config_skill.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Nike",
+            "AssetPath": "Assets/Resources/Perfabs/HeroModel/Nike.prefab",
+            "AssetGuid": "aa709ea708bb7b94e889f18c4da45284",
+            "AssetTags": [],
+            "MainBundleName": "assets_resources_perfabs_heromodel.bundle",
+            "MainBundleSize": 62333,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Body_D.mat",
+                    "AssetGUID": "f94a39719cb247c44a256aa1424421d1"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Face_D.mat",
+                    "AssetGUID": "a40dc48eed297474c85442089a50f461"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Hair_D.mat",
+                    "AssetGUID": "cac712687f4c6ee42a9c8b1042bc5108"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Weapon_D.mat",
+                    "AssetGUID": "9dcfc08d2e4c70b48a5e382254a102bd"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nike.controller",
+                    "AssetGUID": "9caeb5071b4e06446b1123fe40534855"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus@SwitchIn_Normal.FBX",
+                    "AssetGUID": "0b5cc40467d97d8439f701c69682fb53"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus@SwitchOut_Normal.FBX",
+                    "AssetGUID": "a46b4e6791cc29146b37e13b03fdb634"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN.FBX",
+                    "AssetGUID": "55934a5794fec6343b591337e20e1731"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_1.FBX",
+                    "AssetGUID": "c4be8f0fb27636349bfd6c5ea2974179"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_1_End.FBX",
+                    "AssetGUID": "7e10ad516e114014db57c6285397e4ed"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_2.FBX",
+                    "AssetGUID": "20a6226505b7a2146af1c8400f6d708b"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_2_End.FBX",
+                    "AssetGUID": "7b43a59f8fd18d144b6785bfa8efee11"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_3.FBX",
+                    "AssetGUID": "8c6ded484d531444b9b00167755383ef"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_3_End.FBX",
+                    "AssetGUID": "a557c7b9a7b5ac749a8bfedc29dd8aeb"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@BigSkill.FBX",
+                    "AssetGUID": "5f6177ac54bdd2a4b9df04f328b73c5f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@BigSkill_End.FBX",
+                    "AssetGUID": "6c28cb912c398114899e1094efea86ea"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@BigSkill_Start.FBX",
+                    "AssetGUID": "2031defac0ca4664baa9bb8812b107ce"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Evade_Back.FBX",
+                    "AssetGUID": "933b7eea79d0bea4d936b37c39bf6bef"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Evade_Front.FBX",
+                    "AssetGUID": "878e95f9378cc974599581c19cf4b212"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Idle.FBX",
+                    "AssetGUID": "0bf685e8a661bb74dabfc3e429c71bf2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Idle_AFK.FBX",
+                    "AssetGUID": "ee02cb62c56def344bb111a9591ae6b7"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Run.FBX",
+                    "AssetGUID": "adb657ed55f307e478a345eb85e22ada"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Run_End_L.FBX",
+                    "AssetGUID": "30014c2280c63114c9952fcccf4ac04c"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Run_End_R.FBX",
+                    "AssetGUID": "51046cc5377f18146be0d575222159fa"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@TurnBack.FBX",
+                    "AssetGUID": "ceafb88e4ced93d4cbeeed748e5e85d6"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Walk.FBX",
+                    "AssetGUID": "5de677ecc472a5e49bd9137b1844a416"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Body_D_CN.tga.png",
+                    "AssetGUID": "2a5a822b93bad254d819b35459b581c3"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Face_D.tga.png",
+                    "AssetGUID": "02d6a268420c64d448e01d2d16303203"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Hair_D.tga.png",
+                    "AssetGUID": "68af29de44179c340a473bc3bd1a6fcc"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Weapon_D.tga.png",
+                    "AssetGUID": "e051b5839caccbf4ab75e07df257103e"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Shader/Character.shader",
+                    "AssetGUID": "1c92ee9a0ddbcec429b983827abe637b"
+                },
+                {
+                    "AssetPath": "Assets/Config/Skill/Nike Skill Config.asset",
+                    "AssetGUID": "322ce2389e54d6443a655e3b18c38d85"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_arts_nike.bundle",
+                "share_assets_arts_nike_materials.bundle",
+                "share_assets_arts_nike_png.bundle",
+                "share_assets_config_skill.bundle",
+                "unityshaders.bundle"
+            ]
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_resources_perfabs_heromodel.bundle",
+            "FileName": "0cfa4ce6289c398e9dfeaf091b33d73a.bundle",
+            "FileHash": "0cfa4ce6289c398e9dfeaf091b33d73a",
+            "FileCrc": 551735104,
+            "FileSize": 62333,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_arts_anbi.bundle",
+                "share_assets_arts_anbi_materials.bundle",
+                "share_assets_arts_anbi_png.bundle",
+                "share_assets_arts_corin.bundle",
+                "share_assets_arts_corin_materials.bundle",
+                "share_assets_arts_corin_png.bundle",
+                "share_assets_arts_nike.bundle",
+                "share_assets_arts_nike_materials.bundle",
+                "share_assets_arts_nike_png.bundle",
+                "share_assets_config_skill.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Resources/Perfabs/HeroModel/Anbi.prefab",
+                    "AssetGUID": "53625b26a1d3bd745970568f7a26719b"
+                },
+                {
+                    "AssetPath": "Assets/Resources/Perfabs/HeroModel/Corin.prefab",
+                    "AssetGUID": "82d35c34041bc30409a00736fe62232c"
+                },
+                {
+                    "AssetPath": "Assets/Resources/Perfabs/HeroModel/Nike.prefab",
+                    "AssetGUID": "aa709ea708bb7b94e889f18c4da45284"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_anbi.bundle",
+            "FileName": "9b65998fd20e56ff026c4ab563fd54b3.bundle",
+            "FileHash": "9b65998fd20e56ff026c4ab563fd54b3",
+            "FileCrc": 1384935822,
+            "FileSize": 33414070,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_arts_anbi_materials.bundle",
+                "share_assets_arts_anbi_png.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi.controller",
+                    "AssetGUID": "7a6c170d77e4c414a8f8c2f2efee78e5"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi.FBX",
+                    "AssetGUID": "23cdbd03f2eaf3f4cb518099d973a681"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_1.FBX",
+                    "AssetGUID": "629136f7a6ed3a745a94367cd1fb8c55"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_1_End.FBX",
+                    "AssetGUID": "5929e7bdcd825c64f9c275142c13bca4"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_2.FBX",
+                    "AssetGUID": "e1e55c12dc4b0b544be7dc0d6658d44c"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_2_End.FBX",
+                    "AssetGUID": "2a67e1a9b76d34649adc85c17832dcf2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_3.FBX",
+                    "AssetGUID": "66a3c3ba8dac4104492bfc6b94a72069"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_3_End.FBX",
+                    "AssetGUID": "af06614030c1c7549b5c068562a22b9f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_4.FBX",
+                    "AssetGUID": "dca899021812b8647bcdbd37b60255f5"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Attack_Normal_4_End.FBX",
+                    "AssetGUID": "59f18559fd413744eac2de598683513e"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@BigSkill.FBX",
+                    "AssetGUID": "79ddcc155c1b27446b57290b86f300a5"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@BigSkill_End.FBX",
+                    "AssetGUID": "b621fdeb228716248821fe3ce76c4ab2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@BigSkill_Start.FBX",
+                    "AssetGUID": "6ce9753b8ca3ddd4c8529b95e157881a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Evade_Back.FBX",
+                    "AssetGUID": "37b29f4eb6590f24eaa3075bda1defea"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Evade_Front.FBX",
+                    "AssetGUID": "cfa19dc2605312d4993be165683af51a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Idle.FBX",
+                    "AssetGUID": "60f968e677323be408fa57c23ba2d0aa"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Idle_AFK.FBX",
+                    "AssetGUID": "ad4a2bef2c64a3b4db7cdc4898465841"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Run.FBX",
+                    "AssetGUID": "9c7c1b9434aba2845a08684f4ed220ff"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Run_End_L.FBX",
+                    "AssetGUID": "ae23456857b4f6d4cb410d6f322d5470"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Run_End_R.FBX",
+                    "AssetGUID": "b9b2f805b39e1434fa7d580067c36a8d"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@SwitchIn_Normal.FBX",
+                    "AssetGUID": "bcd5e3535cbde024199c6342807f542f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@SwitchOut_Normal.FBX",
+                    "AssetGUID": "8dfc1add812740f4783e603795729dae"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@TurnBack.FBX",
+                    "AssetGUID": "55bf3e8056b8a864fab81dd95012c522"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Anbi@Walk.FBX",
+                    "AssetGUID": "4b5d5036efc6b8848b2c416d536df5bb"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_anbi_materials.bundle",
+            "FileName": "b23aa4a94e18529c88e227dba4f447d1.bundle",
+            "FileHash": "b23aa4a94e18529c88e227dba4f447d1",
+            "FileCrc": 1060644683,
+            "FileSize": 3122,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_arts_anbi_png.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle",
+                "share_assets_arts_anbi.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Body_D.tga.mat",
+                    "AssetGUID": "0aab71da9505119438ba80282108945f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Face_D.tga.mat",
+                    "AssetGUID": "5602330d0a2c99245a7574781e33d557"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Hair_D.tga.mat",
+                    "AssetGUID": "c94c20d4741694c4b935e89ad9529f64"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/Materials/Anbi_Weapon_D.tga.mat",
+                    "AssetGUID": "219b98eedaf14f34e8fde94155fc19ee"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_anbi_png.bundle",
+            "FileName": "84f9e4f90ddd0f525f1d6ab5af60844b.bundle",
+            "FileHash": "84f9e4f90ddd0f525f1d6ab5af60844b",
+            "FileCrc": 4099570036,
+            "FileSize": 3688235,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle",
+                "share_assets_arts_anbi.bundle",
+                "share_assets_arts_anbi_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Body_D.tga.png",
+                    "AssetGUID": "d5f3acdd7fc5df7429d12caac48f9b3f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Face_D.tga.png",
+                    "AssetGUID": "4012ae10fabefaa47a4d2249c915efe8"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Hair_D.tga.png",
+                    "AssetGUID": "f7ea701bf88cb7441a12ac1f37332368"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Anbi/PNG/Anbi_Weapon_D.tga.png",
+                    "AssetGUID": "aa4c627940867474197756a12c8b9139"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_corin.bundle",
+            "FileName": "9b4ac3134abae443cb036da3e12e3768.bundle",
+            "FileHash": "9b4ac3134abae443cb036da3e12e3768",
+            "FileCrc": 465573664,
+            "FileSize": 103223845,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_arts_corin_materials.bundle",
+                "share_assets_arts_corin_png.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin.controller",
+                    "AssetGUID": "4823475d9d7921043977039d1c2f0d56"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin.FBX",
+                    "AssetGUID": "093333bec3e85ee44bf149b914583659"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_1.FBX",
+                    "AssetGUID": "65209e8c4d1801340ac3b4ceafdd692b"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_1_End.FBX",
+                    "AssetGUID": "6e46ebf8de9e3d9489d3a6803f53e9be"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_2.FBX",
+                    "AssetGUID": "dd533906319d5d941bf2b31b59ce3ae2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_2_End.FBX",
+                    "AssetGUID": "32f8a25b2bb9121478a9421dc7a43f44"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_3.FBX",
+                    "AssetGUID": "942a5e7d46d51b9468a2e70314778a8a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_3_End.FBX",
+                    "AssetGUID": "d846ebe4a0f39b44593191ef1c4f8cf3"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_4.FBX",
+                    "AssetGUID": "4743d0640f7aa77429bf28e34977a99f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_4_End.FBX",
+                    "AssetGUID": "5d98f1b449cd8b44e8762defdf42de72"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_5.FBX",
+                    "AssetGUID": "ff7c22733354b664b8af850af06c181f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Attack_Normal_5_End.FBX",
+                    "AssetGUID": "f89a16caf6fc82747861da9d73e789da"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@BigSkill.FBX",
+                    "AssetGUID": "ad3f7b0a0668ead4199d4e298a10886d"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@BigSkill_End.FBX",
+                    "AssetGUID": "053a3313deb69a44cbe4dc4db5a8bb2b"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@BigSkill_Start.FBX",
+                    "AssetGUID": "1cccbad9192fe924bbb7beca8458f038"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Evade_Back.FBX",
+                    "AssetGUID": "605b3d18eee14104e865531390a23e23"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Evade_Front.FBX",
+                    "AssetGUID": "17606826c5911b8428db524f94d4ad14"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Idle.FBX",
+                    "AssetGUID": "f719a10de11acfa47a0d797b22016d9a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Idle_AFK.FBX",
+                    "AssetGUID": "a2fb0a87054b33a46915b50a425f2ee9"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Run.FBX",
+                    "AssetGUID": "810726eb55c11db498e1a9c362962546"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Run_End.FBX",
+                    "AssetGUID": "932ddb9b0733987429189363ef1c5daa"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@SwitchIn_Normal.FBX",
+                    "AssetGUID": "e7559470e3aa4d440bbf52e014012413"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@SwitchOut_Normal.FBX",
+                    "AssetGUID": "32a6d0615b4c9544d8282f4d9fb1328c"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@TurnBack.FBX",
+                    "AssetGUID": "fab0f39f371f2e34d9812c6bacb80435"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Corin@Walk.FBX",
+                    "AssetGUID": "46c131a312e4d104ea002ee6a5aea6b3"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_corin_materials.bundle",
+            "FileName": "c37bd8f43355bd6f2a578b3685cfcce7.bundle",
+            "FileHash": "c37bd8f43355bd6f2a578b3685cfcce7",
+            "FileCrc": 3274822839,
+            "FileSize": 3109,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_arts_corin_png.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle",
+                "share_assets_arts_corin.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Body_D.tga.mat",
+                    "AssetGUID": "afb5df9abb209704089b5feb7ee8ddec"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Face_D.tga.mat",
+                    "AssetGUID": "42eaaa0d4922aaf4b9970518b9a59749"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Hair_D.tga.mat",
+                    "AssetGUID": "e0639b22a83d4064ab72f9cd7cca340a"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/Materials/Corin_Weapon_D.tga.mat",
+                    "AssetGUID": "73c1bd1014384ae4fa3fbfefde1823b0"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_corin_png.bundle",
+            "FileName": "704b3081c8723466c920b49f12392095.bundle",
+            "FileHash": "704b3081c8723466c920b49f12392095",
+            "FileCrc": 1346951661,
+            "FileSize": 3746896,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle",
+                "share_assets_arts_corin.bundle",
+                "share_assets_arts_corin_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Body_D.tga.png",
+                    "AssetGUID": "2a649c6455c98b645b860b2fe0812264"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Face_D.tga.png",
+                    "AssetGUID": "76200fc970e34234bafc48b29c1bf3f3"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Hair_D.tga.png",
+                    "AssetGUID": "c8609015fa1c5a347a0b51170bc28558"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Corin/PNG/Corin_Weapon_D.tga.png",
+                    "AssetGUID": "0af6a8e2cd77f1445ba5f702f7f180d6"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_nike.bundle",
+            "FileName": "ca477870b3dfc8b059af634e26da4bbb.bundle",
+            "FileHash": "ca477870b3dfc8b059af634e26da4bbb",
+            "FileCrc": 2605267704,
+            "FileSize": 33204320,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_arts_nike_materials.bundle",
+                "share_assets_arts_nike_png.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nike.controller",
+                    "AssetGUID": "9caeb5071b4e06446b1123fe40534855"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus@SwitchIn_Normal.FBX",
+                    "AssetGUID": "0b5cc40467d97d8439f701c69682fb53"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus@SwitchOut_Normal.FBX",
+                    "AssetGUID": "a46b4e6791cc29146b37e13b03fdb634"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN.FBX",
+                    "AssetGUID": "55934a5794fec6343b591337e20e1731"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_1.FBX",
+                    "AssetGUID": "c4be8f0fb27636349bfd6c5ea2974179"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_1_End.FBX",
+                    "AssetGUID": "7e10ad516e114014db57c6285397e4ed"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_2.FBX",
+                    "AssetGUID": "20a6226505b7a2146af1c8400f6d708b"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_2_End.FBX",
+                    "AssetGUID": "7b43a59f8fd18d144b6785bfa8efee11"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_3.FBX",
+                    "AssetGUID": "8c6ded484d531444b9b00167755383ef"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Attack_Normal_3_End.FBX",
+                    "AssetGUID": "a557c7b9a7b5ac749a8bfedc29dd8aeb"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@BigSkill.FBX",
+                    "AssetGUID": "5f6177ac54bdd2a4b9df04f328b73c5f"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@BigSkill_End.FBX",
+                    "AssetGUID": "6c28cb912c398114899e1094efea86ea"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@BigSkill_Start.FBX",
+                    "AssetGUID": "2031defac0ca4664baa9bb8812b107ce"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Evade_Back.FBX",
+                    "AssetGUID": "933b7eea79d0bea4d936b37c39bf6bef"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Evade_Front.FBX",
+                    "AssetGUID": "878e95f9378cc974599581c19cf4b212"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Idle.FBX",
+                    "AssetGUID": "0bf685e8a661bb74dabfc3e429c71bf2"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Idle_AFK.FBX",
+                    "AssetGUID": "ee02cb62c56def344bb111a9591ae6b7"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Run.FBX",
+                    "AssetGUID": "adb657ed55f307e478a345eb85e22ada"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Run_End_L.FBX",
+                    "AssetGUID": "30014c2280c63114c9952fcccf4ac04c"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Run_End_R.FBX",
+                    "AssetGUID": "51046cc5377f18146be0d575222159fa"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@TurnBack.FBX",
+                    "AssetGUID": "ceafb88e4ced93d4cbeeed748e5e85d6"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Nostradamus_Model_CN@Walk.FBX",
+                    "AssetGUID": "5de677ecc472a5e49bd9137b1844a416"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_nike_materials.bundle",
+            "FileName": "a982aa26f551eaa2621aed72c714872b.bundle",
+            "FileHash": "a982aa26f551eaa2621aed72c714872b",
+            "FileCrc": 1143322211,
+            "FileSize": 3203,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_arts_nike_png.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle",
+                "share_assets_arts_nike.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Body_D.mat",
+                    "AssetGUID": "f94a39719cb247c44a256aa1424421d1"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Face_D.mat",
+                    "AssetGUID": "a40dc48eed297474c85442089a50f461"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Hair_D.mat",
+                    "AssetGUID": "cac712687f4c6ee42a9c8b1042bc5108"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/Materials/Mat_Nostradamus_Weapon_D.mat",
+                    "AssetGUID": "9dcfc08d2e4c70b48a5e382254a102bd"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_arts_nike_png.bundle",
+            "FileName": "ead7fcd92788069e77354215596af1a8.bundle",
+            "FileHash": "ead7fcd92788069e77354215596af1a8",
+            "FileCrc": 2933216442,
+            "FileSize": 3259875,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle",
+                "share_assets_arts_nike.bundle",
+                "share_assets_arts_nike_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Body_D_CN.tga.png",
+                    "AssetGUID": "2a5a822b93bad254d819b35459b581c3"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Face_D.tga.png",
+                    "AssetGUID": "02d6a268420c64d448e01d2d16303203"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Hair_D.tga.png",
+                    "AssetGUID": "68af29de44179c340a473bc3bd1a6fcc"
+                },
+                {
+                    "AssetPath": "Assets/Arts/Nike/PNG/Nostradamus_Weapon_D.tga.png",
+                    "AssetGUID": "e051b5839caccbf4ab75e07df257103e"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_config_skill.bundle",
+            "FileName": "eb7d74fb1cb9cb400ff4457d118f2ab9.bundle",
+            "FileHash": "eb7d74fb1cb9cb400ff4457d118f2ab9",
+            "FileCrc": 2483404220,
+            "FileSize": 1965,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Config/Skill/Anbi Skill Config.asset",
+                    "AssetGUID": "6263c4c6b9c876b4f920bc68f7042359"
+                },
+                {
+                    "AssetPath": "Assets/Config/Skill/Corin Skill Config.asset",
+                    "AssetGUID": "f734918d21417b64d97e1d1e33cd6f01"
+                },
+                {
+                    "AssetPath": "Assets/Config/Skill/Nike Skill Config.asset",
+                    "AssetGUID": "322ce2389e54d6443a655e3b18c38d85"
+                }
+            ]
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "FileName": "c0e359e4ae9811591f8ab5a8fcde58e5.bundle",
+            "FileHash": "c0e359e4ae9811591f8ab5a8fcde58e5",
+            "FileCrc": 1990722762,
+            "FileSize": 63291,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_resources_perfabs_heromodel.bundle",
+                "share_assets_arts_anbi.bundle",
+                "share_assets_arts_anbi_materials.bundle",
+                "share_assets_arts_corin.bundle",
+                "share_assets_arts_corin_materials.bundle",
+                "share_assets_arts_nike.bundle",
+                "share_assets_arts_nike_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Arts/Shader/Character.shader",
+                    "AssetGUID": "1c92ee9a0ddbcec429b983827abe637b"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ]
+        }
+    ],
+    "IndependentAssets": []
+}
