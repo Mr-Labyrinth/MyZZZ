@@ -22,15 +22,15 @@ public class SelectPanel : MonoBehaviour
             GameObject page;
             string name = uiConfig.uiConfigDatas[i].uiName;
             string path = uiConfig.uiConfigDatas[i].uiPath;
-            //if (AssetLoader.Load<GameObject>(uiConfig.uiConfigDatas[i].uiPath, out page))
-            //{
-            //    pages[i] = Instantiate(page, pageRoot);
-            //    pages[i].SetActive(false);
-            //}
-            //else
-            //{
-            //    Debug.LogError("资源加载失败："+ name + " :\n " + path);
-            //}
+            if (AssetLoader.Load<GameObject>(uiConfig.uiConfigDatas[i].uiPath, out page))
+            {
+                pages[i] = Instantiate(page, pageRoot);
+                pages[i].SetActive(false);
+            }
+            else
+            {
+                Debug.LogError("资源加载失败：" + name + " :\n " + path);
+            }
         }
     }
 

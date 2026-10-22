@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class AssetManager : SingleMomoBase<AssetManager>
 {
-    private AssetLoader assetLoader;
-
     private Dictionary<string, UnityEngine.Object> loadedAssets = new();
 
     [SerializeField]
@@ -13,14 +11,13 @@ public class AssetManager : SingleMomoBase<AssetManager>
     protected override void Awake()
     {
         base.Awake();
-        assetLoader = AssetLoader.Instance;
     }
 
     private void InitLoadAsset()
     {
         foreach (var assetConfig in initAssetConfig.AssetConfigs)
         {
-            assetLoader.Load<UnityEngine.Object>(assetConfig.assetPath, out var asset);
+            AssetLoader.Load<UnityEngine.Object>(assetConfig.assetPath, out var asset);
             loadedAssets[assetConfig.assetName] = asset;
         }
     }
