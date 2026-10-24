@@ -8,6 +8,10 @@ public class BehaviourTree : ScriptableObject
 
     public Node.State Update()
     {
-        return rootNode.Update();
+        if(rootNode.state == Node.State.Runing)
+        {
+            treeState = rootNode.Update();
+        }
+        return treeState;
     }
 }
