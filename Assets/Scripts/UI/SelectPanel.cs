@@ -37,7 +37,7 @@ public class SelectPanel : MonoBehaviour
     private void Start()
     {
         Toggle[] toggles = toggleGroup.GetComponentsInChildren<Toggle>();
-        for(int i = 0; i < toggles.Length; i++)
+        for (int i = 0; i < toggles.Length; i++)
         {
             int index = i;// 防止闭包问题
             // 为每个Toggle添加监听器，当Toggle被选中时切换到对应的页面
