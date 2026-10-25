@@ -4,12 +4,12 @@ public abstract class Node : ScriptableObject
 {
     public enum State
     {
-        Runing,
+        Running,
         Failure,
         Success
     }
 
-    public State state = State.Runing;
+    public State state = State.Running;
     public bool started = false;
 
     public State Update()
