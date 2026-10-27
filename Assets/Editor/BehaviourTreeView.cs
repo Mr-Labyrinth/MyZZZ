@@ -27,9 +27,9 @@ public partial class BehaviourTreeView : GraphView
     {
         this.tree = tree;
 
-        graphViewChanged -= OngraphViewChanged;
+        graphViewChanged -= OnGraphViewChanged;
         DeleteElements(graphElements);
-        graphViewChanged += OngraphViewChanged;
+        graphViewChanged += OnGraphViewChanged;
 
         tree.nodes.ForEach(n => CreateNodeView(n));
     }
@@ -41,7 +41,7 @@ public partial class BehaviourTreeView : GraphView
             endPort.node != startPort.node).ToList();
     }
 
-    private GraphViewChange OngraphViewChanged(GraphViewChange graphViewChange)
+    private GraphViewChange OnGraphViewChanged(GraphViewChange graphViewChange)
     {
         if(graphViewChange.elementsToRemove != null)
         {
@@ -52,6 +52,24 @@ public partial class BehaviourTreeView : GraphView
                 {
                     tree.DeleteNode(nodeView.node);
                 }
+
+                Edge edge = elem as Edge;
+                if(edge is not null)
+                {
+                    NodeView parentView = edge.output.node as NodeView;
+                    NodeView childView = edge.input.node as NodeView;
+                    tree.RemoveChild(parentView.node, childView.node);
+                }
+            });
+        }
+
+        if(graphViewChange.edgesToCreate != null)
+        {
+            graphViewChange.edgesToCreate.ForEach(edge =>
+            {
+                NodeView parentView = edge.output.node as NodeView;
+                NodeView childView = edge.input.node as NodeView;
+                tree.AddChild(parentView.node, childView.node);
             });
         }
         return graphViewChange;
