@@ -67,7 +67,7 @@ public class BehaviourTree : ScriptableObject
         }
     }
 
-    public List<Node> GetChildren(Node parent, Node child)
+    public List<Node> GetChildren(Node parent)
     {
         List<Node> children = new List<Node>();
 

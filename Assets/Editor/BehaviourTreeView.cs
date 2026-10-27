@@ -23,6 +23,12 @@ public partial class BehaviourTreeView : GraphView
         styleSheets.Add(sylesheet);
     }
 
+    NodeView FindNodeView(Node node)
+    {
+        return GetNodeByGuid(node.guid) as NodeView;
+    }
+
+    // 填充图形视图，将行为树中的节点创建为节点视图并添加到图形视图中
     internal void PopulateView(BehaviourTree tree)
     {
         this.tree = tree;
@@ -31,9 +37,23 @@ public partial class BehaviourTreeView : GraphView
         DeleteElements(graphElements);
         graphViewChanged += OnGraphViewChanged;
 
+        // 创建节点视图并添加到图形视图中
         tree.nodes.ForEach(n => CreateNodeView(n));
+
+        tree.nodes.ForEach(n =>
+        {
+            var Children = tree.GetChildren(n);
+            NodeView parentView = FindNodeView(n);
+            Children.ForEach(c =>
+            {
+                NodeView childView = FindNodeView(c);
+                Edge edge = parentView.output.ConnectTo(childView.input);
+                AddElement(edge);
+            });
+        });
     }
 
+    // 获取兼容的端口，确保连接的端口方向不同且不属于同一个节点
     public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
     {
         return ports.ToList().Where(endPort => 
@@ -41,6 +61,7 @@ public partial class BehaviourTreeView : GraphView
             endPort.node != startPort.node).ToList();
     }
 
+    // 当图形视图发生变化时调用的回调函数，用于处理节点和边的添加和删除
     private GraphViewChange OnGraphViewChanged(GraphViewChange graphViewChange)
     {
         if(graphViewChange.elementsToRemove != null)
@@ -75,6 +96,7 @@ public partial class BehaviourTreeView : GraphView
         return graphViewChange;
     }
 
+    // 在右键菜单中添加创建节点的选项
     public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
     {
         //base.BuildContextualMenu(evt);
@@ -106,12 +128,14 @@ public partial class BehaviourTreeView : GraphView
         }
     }
 
+    // 创建一个新的节点并将其添加到行为树中
     void CreateNode(System.Type type)
     {
         Node node = tree.CreateNode(type);
         CreateNodeView(node);
     }
 
+    // 创建一个节点视图并将其添加到图形视图中
     void CreateNodeView(Node node)
     {
         NodeView nodeView = new NodeView(node);
