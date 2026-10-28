@@ -28,6 +28,8 @@ public class BehaviourTreeEditor : EditorWindow
         treeView = root.Q<BehaviourTreeView>();
         inspectorView = root.Q<InspectorView>();
 
+        treeView.OnNodeSelected += OnNodeSelectionChenged;
+
         OnSelectionChange();
     }
 
@@ -38,5 +40,10 @@ public class BehaviourTreeEditor : EditorWindow
         {
             treeView.PopulateView(tree);
         }
+    }
+
+    void OnNodeSelectionChenged(NodeView node)
+    {
+        inspectorView.UpdateSelection(node);
     }
 }
