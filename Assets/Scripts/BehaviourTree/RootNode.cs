@@ -17,4 +17,14 @@ public class RootNode : Node
     {
         return child.Update();
     }
+
+    public override Node Clone()
+    {
+        RootNode rootNodeClone = Instantiate(this);
+        if(child != null)
+        {
+            rootNodeClone.child = child.Clone();
+        }
+        return rootNodeClone;
+    }
 }

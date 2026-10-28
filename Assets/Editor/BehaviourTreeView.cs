@@ -38,6 +38,13 @@ public partial class BehaviourTreeView : GraphView
         DeleteElements(graphElements);
         graphViewChanged += OnGraphViewChanged;
 
+        if(tree.rootNode is null)
+        {
+            tree.rootNode = tree.CreateNode(typeof(RootNode)) as RootNode;
+            EditorUtility.SetDirty(tree);
+            AssetDatabase.SaveAssets();
+        }
+
         // 创建节点视图并添加到图形视图中
         tree.nodes.ForEach(n => CreateNodeView(n));
 

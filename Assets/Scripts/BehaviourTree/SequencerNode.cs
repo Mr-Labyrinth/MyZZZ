@@ -15,7 +15,7 @@ public class SequencerNode : CompositeNode
 
     protected override State OnUpdate()
     {
-        var child = Children[current];
+        var child = children[current];
         switch (child.Update())
         {
             case State.Running:
@@ -27,6 +27,6 @@ public class SequencerNode : CompositeNode
                 break;
         }
 
-        return current == Children.Count ? State.Success : State.Running;
+        return current == children.Count ? State.Success : State.Running;
     }
 }

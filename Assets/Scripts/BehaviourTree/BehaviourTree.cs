@@ -45,10 +45,16 @@ public class BehaviourTree : ScriptableObject
             decoratorNode.child = child;
         }
 
+        RootNode rootNode = parent as RootNode;
+        if (rootNode)
+        {
+            rootNode.child = child;
+        }
+
         CompositeNode compositeNode = parent as CompositeNode;
         if (compositeNode)
         {
-            compositeNode.Children.Add(child);
+            compositeNode.children.Add(child);
         }
     }
 
@@ -60,10 +66,16 @@ public class BehaviourTree : ScriptableObject
             decoratorNode.child = null;
         }
 
+        RootNode rootNode = parent as RootNode;
+        if (rootNode)
+        {
+            rootNode.child = null;
+        }
+
         CompositeNode compositeNode = parent as CompositeNode;
         if (compositeNode)
         {
-            compositeNode.Children.Remove(child);
+            compositeNode.children.Remove(child);
         }
     }
 
@@ -77,12 +89,25 @@ public class BehaviourTree : ScriptableObject
             children.Add(decoratorNode.child);        
         }
 
+        RootNode rootNode = parent as RootNode;
+        if (rootNode && rootNode.child is not null)
+        {
+            children.Add(rootNode.child);
+        }
+
         CompositeNode compositeNode = parent as CompositeNode;
         if (compositeNode)
         {
-            return compositeNode.Children;
+            return compositeNode.children;
         }
 
         return children;
+    }
+
+    public BehaviourTree Clone()
+    {
+        BehaviourTree treeClone = Instantiate(this);
+        treeClone.rootNode = rootNode.Clone();
+        return treeClone;
     }
 }

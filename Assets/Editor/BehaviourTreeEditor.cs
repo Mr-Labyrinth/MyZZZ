@@ -36,7 +36,7 @@ public class BehaviourTreeEditor : EditorWindow
     private void OnSelectionChange()
     {
         BehaviourTree tree = Selection.activeObject as BehaviourTree;
-        if (tree)
+        if (tree && AssetDatabase.CanOpenAssetInEditor(tree.GetInstanceID()))
         {
             treeView.PopulateView(tree);
         }
