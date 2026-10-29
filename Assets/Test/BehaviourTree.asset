@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8688114375226328975
+--- !u!114 &-5809801060337388315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14,9 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: f18aaa55-9322-44e8-a335-fb27192068d5
-  position: {x: 334.8747, y: -204.04108}
-  message: twotwotwo
+  guid: f9b05568-8601-4fb6-8195-85aa73c9014b
+  position: {x: 380.6667, y: 60.666687}
+  message: one
+--- !u!114 &-2238963169690395874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cc81ace955b3d4095998d039e4190f, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f8a2f71a-634c-4ac8-bfeb-560027d83ffa
+  position: {x: 375.33337, y: -64.66667}
+  duration: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +52,10 @@ MonoBehaviour:
   - {fileID: 1456867488855822081}
   - {fileID: 2759828593752308302}
   - {fileID: 4047355522896984939}
-  - {fileID: 2611960130330209241}
-  - {fileID: 4425990039432461852}
-  - {fileID: 5858387197594098488}
-  - {fileID: -8688114375226328975}
+  - {fileID: -5809801060337388315}
+  - {fileID: -2238963169690395874}
+  - {fileID: 9008319728275012043}
+  - {fileID: 5784086247390682212}
 --- !u!114 &1456867488855822081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,27 +73,9 @@ MonoBehaviour:
   guid: 4d52ac68-200c-4362-bbfb-0802feec6244
   position: {x: 133.95456, y: -28.273006}
   children:
-  - {fileID: 2611960130330209241}
-  - {fileID: 4425990039432461852}
-  - {fileID: 5858387197594098488}
-  - {fileID: -8688114375226328975}
---- !u!114 &2611960130330209241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24cc81ace955b3d4095998d039e4190f, type: 3}
-  m_Name: WaitNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 11ea8f99-0b1b-4f46-9d10-eb8b08d022b3
-  position: {x: 329.2533, y: 106}
-  duration: 1
+  - {fileID: -5809801060337388315}
+  - {fileID: -2238963169690395874}
+  - {fileID: 9008319728275012043}
 --- !u!114 &2759828593752308302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,24 +110,7 @@ MonoBehaviour:
   guid: 464e62c7-9c48-4585-a7a1-85af97110b5d
   position: {x: -199.27203, y: -29.133337}
   child: {fileID: 2759828593752308302}
---- !u!114 &4425990039432461852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c6e464872259c48a7d0ed9c855b061, type: 3}
-  m_Name: DebugLogNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: a5dd77e1-8c49-4517-878d-4db9f6b3da3a
-  position: {x: 335.33328, y: -4.6666718}
-  message: oneoneone
---- !u!114 &5858387197594098488
+--- !u!114 &5784086247390682212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,6 +124,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: eae8ef88-8823-4f45-b585-0d1428f5581c
-  position: {x: 352.215, y: -109.33332}
+  guid: 939a0252-b4e9-4b2b-a6ba-aa1f65f5aa83
+  position: {x: 0, y: 0}
   duration: 1
+--- !u!114 &9008319728275012043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6e464872259c48a7d0ed9c855b061, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f92ff9d9-3c4b-4984-9555-c44ff57dfa7c
+  position: {x: 350.66666, y: -197.78665}
+  message: two

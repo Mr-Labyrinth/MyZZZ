@@ -59,6 +59,8 @@ public partial class BehaviourTreeView : GraphView
                 AddElement(edge);
             });
         });
+
+        schedule.Execute(RefreshCompositeEdgeOrders).ExecuteLater(0);
     }
 
     // 获取兼容的端口，确保连接的端口方向不同且不属于同一个节点
@@ -90,6 +92,8 @@ public partial class BehaviourTreeView : GraphView
                     tree.RemoveChild(parentView.node, childView.node);
                 }
             });
+
+            schedule.Execute(RefreshCompositeEdgeOrders).ExecuteLater(0);
         }
 
         if(graphViewChange.edgesToCreate != null)
@@ -100,7 +104,11 @@ public partial class BehaviourTreeView : GraphView
                 NodeView childView = edge.input.node as NodeView;
                 tree.AddChild(parentView.node, childView.node);
             });
+
+            schedule.Execute(RefreshCompositeEdgeOrders).ExecuteLater(0);
         }
+
+
         return graphViewChange;
     }
 
@@ -136,11 +144,47 @@ public partial class BehaviourTreeView : GraphView
         }
     }
 
+    public void RefreshCompositeEdgeOrders()
+    {
+        foreach(var e in nodes)
+        {
+            if(e is not NodeView nodeView) continue;
+            if(nodeView.node is not CompositeNode compositeNode) continue;
+            if(nodeView.output == null) continue;
+
+            int total = compositeNode.children.Count;
+            if(total == 0) continue;
+
+            for(int i = 0; i < total; i++)
+            {
+                var child = compositeNode.children[i];
+                var childView = FindNodeView(child);
+
+                Edge edge = nodeView.output.connections.FirstOrDefault(c => c.input.node == childView);
+
+                if (edge is null) continue;
+
+                edge.edgeControl.Q<Label>("order-label")?.RemoveFromHierarchy();
+                var label = new Label(i.ToString());
+                label.name = "order-label";
+                label.pickingMode = PickingMode.Ignore;
+                label.style.position = Position.Absolute;
+                label.style.unityFontStyleAndWeight = UnityEngine.FontStyle.Bold;
+                label.style.fontSize = 18;
+                label.style.left = Length.Percent(50);
+                label.style.top = Length.Percent(50);
+                label.style.translate = new Translate(Length.Percent(-50), Length.Percent(-50));
+                edge.edgeControl.Add(label);
+            }
+        }
+    }
+
     // 创建一个新的节点并将其添加到行为树中
     void CreateNode(System.Type type)
     {
         Node node = tree.CreateNode(type);
         CreateNodeView(node);
+        EditorUtility.SetDirty(tree);
     }
 
     // 创建一个节点视图并将其添加到图形视图中
