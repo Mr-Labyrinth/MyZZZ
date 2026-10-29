@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
 using System.Linq;
+using UnityEngine;
 
 [UxmlElement]
 public partial class BehaviourTreeView : GraphView
@@ -120,7 +121,7 @@ public partial class BehaviourTreeView : GraphView
             var types = TypeCache.GetTypesDerivedFrom<ActionNode>();
             foreach (var type in types)
             {
-                evt.menu.AppendAction($"[{type.BaseType.Name}] {type.Name}",
+                evt.menu.AppendAction($"[{type.BaseType.Name}] /{type.Name}",
                     (a) => CreateNode(type));
             }
         }
@@ -129,7 +130,7 @@ public partial class BehaviourTreeView : GraphView
             var types = TypeCache.GetTypesDerivedFrom<CompositeNode>();
             foreach (var type in types)
             {
-                evt.menu.AppendAction($"[{type.BaseType.Name}] {type.Name}",
+                evt.menu.AppendAction($"[{type.BaseType.Name}] /{type.Name}",
                     (a) => CreateNode(type));
             }
         }
@@ -138,7 +139,7 @@ public partial class BehaviourTreeView : GraphView
             var types = TypeCache.GetTypesDerivedFrom<DecoratorNode>();
             foreach (var type in types)
             {
-                evt.menu.AppendAction($"[{type.BaseType.Name}] {type.Name}",
+                evt.menu.AppendAction($"[{type.BaseType.Name}] /{type.Name}",
                     (a) => CreateNode(type));
             }
         }
@@ -173,6 +174,7 @@ public partial class BehaviourTreeView : GraphView
                 label.style.fontSize = 18;
                 label.style.left = Length.Percent(50);
                 label.style.top = Length.Percent(50);
+                label.style.color = new StyleColor(Color.green);
                 label.style.translate = new Translate(Length.Percent(-50), Length.Percent(-50));
                 edge.edgeControl.Add(label);
             }
