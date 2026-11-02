@@ -13,4 +13,12 @@ public abstract class DecoratorNode : Node
         }
         return decoratorNodeClone;
     }
+
+    public override void Bind(GameObject gameObject)
+    {
+        if (child != null)
+        {
+            child.Bind(gameObject);
+        }
+    }
 }

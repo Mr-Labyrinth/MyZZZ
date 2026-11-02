@@ -11,4 +11,12 @@ public abstract class CompositeNode : Node
         compositeNodeClone.children = children.ConvertAll(child => child.Clone());
         return compositeNodeClone;
     }
+
+    public override void Bind(GameObject gameObject)
+    {
+        foreach (var child in children)
+        {
+            child.Bind(gameObject);
+        }
+    }
 }

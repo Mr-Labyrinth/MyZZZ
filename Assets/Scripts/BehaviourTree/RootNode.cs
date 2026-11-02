@@ -27,4 +27,9 @@ public class RootNode : Node
         }
         return rootNodeClone;
     }
+
+    public override void Bind(GameObject gameObject)
+    {
+        child.Bind(gameObject);
+    }
 }

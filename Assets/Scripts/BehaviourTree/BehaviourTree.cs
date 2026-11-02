@@ -110,4 +110,9 @@ public class BehaviourTree : ScriptableObject
         treeClone.rootNode = rootNode.Clone();
         return treeClone;
     }
+
+    public void Bind(GameObject gameObject)
+    {
+        rootNode.Bind(gameObject);
+    }
 }
