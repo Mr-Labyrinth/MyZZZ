@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using UnityEngine;
 
 public abstract class Node : ScriptableObject
@@ -36,6 +37,11 @@ public abstract class Node : ScriptableObject
     public virtual Node Clone()
     {
         return Instantiate(this);
+    }
+
+    public virtual void Bind(GameObject gameObject)
+    {
+
     }
 
     protected abstract void OnStart();
