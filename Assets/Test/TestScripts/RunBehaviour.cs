@@ -6,6 +6,7 @@ public class RunBehaviour : MonoBehaviour
     void Start()
     {
         tree = tree.Clone();
+        tree.Bind(gameObject);
     }
 
     void Update()

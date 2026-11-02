@@ -16,7 +16,7 @@ public class AnimationNode : ActionNode
         {
             targetGameObject = gameObject;
         }
-        animator = targetGameObject.GetComponent<Animator>();
+        animator = targetGameObject.GetComponentInChildren<Animator>();
     }
 
     protected override void OnStart()
