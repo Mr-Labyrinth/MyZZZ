@@ -20,6 +20,7 @@ public class TimeoutNode : DecoratorNode
     {
         if(currentTime >= timeout)
         {
+            child.Abort();
             return State.Failure;
         }
 
