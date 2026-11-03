@@ -19,4 +19,13 @@ public abstract class CompositeNode : Node
             child.Bind(gameObject);
         }
     }
+
+    public override void Abort()
+    {
+        base.Abort();
+        foreach (var child in children)
+        {
+            child.Abort();
+        }
+    }
 }

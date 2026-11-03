@@ -44,6 +44,11 @@ public abstract class Node : ScriptableObject
 
     }
 
+    public virtual void Abort()
+    {
+        OnStop();
+        started = false;
+    }
     protected abstract void OnStart();
     protected abstract void OnStop();
     protected abstract State OnUpdate();

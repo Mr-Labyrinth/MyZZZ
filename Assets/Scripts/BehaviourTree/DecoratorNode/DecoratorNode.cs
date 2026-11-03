@@ -21,4 +21,11 @@ public abstract class DecoratorNode : Node
             child.Bind(gameObject);
         }
     }
+
+    public override void Abort()
+    {
+        base.Abort();
+
+        child.Abort();
+    }
 }
