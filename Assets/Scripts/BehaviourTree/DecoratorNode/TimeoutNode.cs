@@ -4,7 +4,7 @@ public class TimeoutNode : DecoratorNode
 {
     public float timeout;
 
-    public float currentTime;
+    private float currentTime;
 
     protected override void OnStart()
     {
@@ -18,7 +18,7 @@ public class TimeoutNode : DecoratorNode
 
     protected override State OnUpdate()
     {
-        if(currentTime >= timeout)
+        if(currentTime > timeout)
         {
             child.Abort();
             return State.Failure;
