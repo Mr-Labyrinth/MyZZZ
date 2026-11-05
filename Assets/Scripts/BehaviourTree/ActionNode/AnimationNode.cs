@@ -38,6 +38,12 @@ public class AnimationNode : ActionNode
         return State.Running;
     }
 
+    public override void Abort()
+    {
+        animator.Play(animationName, 0, 1.0f);
+        base.Abort();
+    }
+
     public bool IsAnimationEnd()
     {
         var stateInfo = animator.GetCurrentAnimatorStateInfo(0);
