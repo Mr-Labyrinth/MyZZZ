@@ -5,9 +5,9 @@ public class AnimationNode : ActionNode
 {
     public string animationName;
 
-    public GameObject targetGameObject;
+    private GameObject targetGameObject;
 
-    public Animator animator;
+    private Animator animator;
 
     public override void Bind(GameObject gameObject)
     {
