@@ -1,16 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class ProbabilitySelectorNode : MonoBehaviour
+public class ProbabilitySelectorNode : CompositeNode
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public List<float> probabilities = new List<float>();
+
+    protected override void OnStart()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnStop()
     {
         
+    }
+
+    protected override State OnUpdate()
+    {
+        return State.Running;
     }
 }
