@@ -10,7 +10,6 @@ public class ProbabilitySelectorNode : CompositeNode
 
     protected override void OnStart()
     {
-        
         selectedIndex = PickIndex();  // ★ 进入时选一次
     }
 
@@ -45,7 +44,6 @@ public class ProbabilitySelectorNode : CompositeNode
 
         if (total <= 0f)
         {
-            Debug.LogWarning($"{name}: 所有子节点权重为 0，本次返回 Failure");
             return -1;
         }
 

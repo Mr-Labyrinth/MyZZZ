@@ -59,6 +59,8 @@ public partial class BehaviourTreeView : GraphView
                 Edge edge = parentView.output.ConnectTo(childView.input);
                 AddElement(edge);
             });
+
+            SyncProbabilityWeights(n);
         });
 
         schedule.Execute(RefreshCompositeEdgeOrders).ExecuteLater(0);
@@ -83,6 +85,7 @@ public partial class BehaviourTreeView : GraphView
                 if(nodeView != null)
                 {
                     tree.DeleteNode(nodeView.node);
+                    foreach(var n in tree.nodes) SyncProbabilityWeights(n);
                 }
 
                 Edge edge = elem as Edge;
@@ -90,7 +93,18 @@ public partial class BehaviourTreeView : GraphView
                 {
                     NodeView parentView = edge.output.node as NodeView;
                     NodeView childView = edge.input.node as NodeView;
-                    tree.RemoveChild(parentView.node, childView.node);
+                    if(parentView.node is ProbabilitySelectorNode p)
+                    {
+                        int idx = p.children.IndexOf(childView.node);// 获取节点下标
+                        tree.RemoveChild(parentView.node, childView.node);
+                        if (idx >= 0 && idx < p.weights.Count)
+                            p.weights.RemoveAt(idx);// 删除对应的权重
+                        EditorUtility.SetDirty(p);
+                    }
+                    else
+                    {
+                        tree.RemoveChild(parentView.node, childView.node);
+                    }
                 }
             });
 
@@ -104,6 +118,8 @@ public partial class BehaviourTreeView : GraphView
                 NodeView parentView = edge.output.node as NodeView;
                 NodeView childView = edge.input.node as NodeView;
                 tree.AddChild(parentView.node, childView.node);
+
+                SyncProbabilityWeights(parentView.node);
             });
 
             schedule.Execute(RefreshCompositeEdgeOrders).ExecuteLater(0);
@@ -195,5 +211,18 @@ public partial class BehaviourTreeView : GraphView
         NodeView nodeView = new NodeView(node);
         nodeView.OnNodeSelected = OnNodeSelected;
         AddElement(nodeView);
+    }
+
+    // 保证 weights 长度与 children 一致；多了截断末尾，少了补默认 1f
+    private void SyncProbabilityWeights(Node parent)
+    {
+        if (parent is not ProbabilitySelectorNode p) return;
+        if (p.weights == null) p.weights = new List<float>();
+
+        while (p.weights.Count < p.children.Count) p.weights.Add(1f);
+        while (p.weights.Count > p.children.Count)
+            p.weights.RemoveAt(p.weights.Count - 1);
+
+        EditorUtility.SetDirty(p);
     }
 }
