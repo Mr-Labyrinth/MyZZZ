@@ -9,7 +9,9 @@
                 <engine:Label text="Inspector" style="background-color: rgb(20, 20, 20);" />
                 <InspectorView />
             </engine:VisualElement>
-            <engine:VisualElement style="flex-grow: 1;" />
+            <engine:VisualElement style="flex-grow: 1;">
+                <BlackBoardView />
+            </engine:VisualElement>
         </SplitView>
         <engine:VisualElement style="flex-grow: 1;">
             <engine:Label text="Tree View" style="background-color: rgb(20, 20, 20);" />
