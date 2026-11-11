@@ -41,6 +41,7 @@ public class BehaviourTreeEditor : EditorWindow
         if (tree && AssetDatabase.CanOpenAssetInEditor(tree.GetInstanceID()))
         {
             treeView.PopulateView(tree);
+            blackBoardView.UpdateSelection(tree.blackBoard);
         }
     }
 
