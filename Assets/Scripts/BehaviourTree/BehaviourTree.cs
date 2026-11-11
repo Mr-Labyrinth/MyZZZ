@@ -8,6 +8,7 @@ public class BehaviourTree : ScriptableObject
     public Node rootNode;
     public Node.State treeState = Node.State.Running;
     public List<Node> nodes = new List<Node>();
+    public BlackBoard blackBoard;
 
     public Node.State Update()
     {
@@ -23,6 +24,7 @@ public class BehaviourTree : ScriptableObject
         Node node = CreateInstance(type) as Node;
         node.name = type.Name;
         node.guid = System.Guid.NewGuid().ToString();
+        node.SetBlackBoard(blackBoard);
         nodes.Add(node);
 
         AssetDatabase.AddObjectToAsset(node, this);
@@ -108,6 +110,7 @@ public class BehaviourTree : ScriptableObject
     {
         BehaviourTree treeClone = Instantiate(this);
         treeClone.rootNode = rootNode.Clone();
+        treeClone.blackBoard = Instantiate(blackBoard);
         return treeClone;
     }
 

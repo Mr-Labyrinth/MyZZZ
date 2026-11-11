@@ -15,6 +15,8 @@ public abstract class Node : ScriptableObject
     [HideInInspector] public string guid;
     [HideInInspector] public Vector2 position;
 
+    private BlackBoard blackBoard;
+
     public State Update()
     {
         if(!started)
@@ -42,6 +44,11 @@ public abstract class Node : ScriptableObject
     public virtual void Bind(GameObject gameObject)
     {
 
+    }
+
+    public virtual void SetBlackBoard(BlackBoard blackBoard)
+    {
+        this.blackBoard = blackBoard;
     }
 
     public virtual void Abort()
