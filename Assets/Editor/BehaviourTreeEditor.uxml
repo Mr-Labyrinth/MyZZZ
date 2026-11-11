@@ -4,10 +4,13 @@
         <editor:ToolbarMenu text="Assets " />
     </editor:Toolbar>
     <SplitView fixed-pane-initial-dimension="300">
-        <engine:VisualElement style="flex-grow: 1;">
-            <engine:Label text="Inspector" style="background-color: rgb(20, 20, 20);" />
-            <InspectorView />
-        </engine:VisualElement>
+        <SplitView orientation="Vertical" fixed-pane-initial-dimension="400">
+            <engine:VisualElement style="flex-grow: 1;">
+                <engine:Label text="Inspector" style="background-color: rgb(20, 20, 20);" />
+                <InspectorView />
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1;" />
+        </SplitView>
         <engine:VisualElement style="flex-grow: 1;">
             <engine:Label text="Tree View" style="background-color: rgb(20, 20, 20);" />
             <BehaviourTreeView name="BehaviourTreeView" style="flex-grow: 1;" />

@@ -6,6 +6,7 @@ public class BehaviourTreeEditor : EditorWindow
 {
     BehaviourTreeView treeView;
     InspectorView inspectorView;
+    BlackBoardView blackBoardView;
 
     [MenuItem("BehaviourTreeEditor/Editor ...")]
     public static void OpenWindow()
@@ -27,6 +28,7 @@ public class BehaviourTreeEditor : EditorWindow
 
         treeView = root.Q<BehaviourTreeView>();
         inspectorView = root.Q<InspectorView>();
+        blackBoardView = root.Q<BlackBoardView>();
 
         treeView.OnNodeSelected += OnNodeSelectionChenged;
 
