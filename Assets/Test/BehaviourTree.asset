@@ -78,6 +78,7 @@ MonoBehaviour:
   - {fileID: -50807247745635159}
   - {fileID: 834866060788994113}
   - {fileID: -8776740029043713097}
+  blackBoard: {fileID: 0}
 --- !u!114 &834866060788994113
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -41,6 +41,13 @@ public class BehaviourTreeEditor : EditorWindow
         if (tree && AssetDatabase.CanOpenAssetInEditor(tree.GetInstanceID()))
         {
             treeView.PopulateView(tree);
+            if(tree.blackBoard is null)
+            {
+                tree.blackBoard = CreateInstance<BlackBoard>();
+                AssetDatabase.AddObjectToAsset(tree.blackBoard, tree);
+                AssetDatabase.SaveAssets();
+                EditorUtility.SetDirty(tree);
+            }
             blackBoardView.UpdateSelection(tree.blackBoard);
         }
     }
